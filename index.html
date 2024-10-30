@@ -3,58 +3,166 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Ivalisia - A Survival RPG Adventure</title>
-    <meta name="description" content="Ivalisia is an upcoming survival RPG set in the fantasy world of Ivalisia. Survive, Build, Craft, and level up your skills as you explore roguelike procedural dungeons. Enjoy permanent character progression, and play with your friends!">
-    <meta name="keywords" content="Ivalisia, Ivalissia, Ivalysia, Ivalisya,Ivalyssia, Ivalissya survival RPG, roguelike dungeons, co-op multiplayer, fantasy world, character progression, adventure game">
+    <title>Ivalisia - The Ultimate Survival RPG Adventure</title>
+    <meta name="description" content="Ivalisia is an immersive survival RPG set in a vast fantasy world. Explore, craft, and conquer procedurally generated dungeons solo or with friends. Available soon on Steam.">
+    <meta name="keywords" content="Ivalisia, Ivalissia, Ivalysia, Ivalisya, Ivalyssia, Ivalissya, Ivalyssya, Survival RPG, Procedural Dungeons, Co-op Multiplayer, Fantasy World, Adventure Game, Lorendil Interactive">
     <meta name="author" content="Lorendil Interactive Inc.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    
     <!-- Open Graph / Facebook -->
-    <meta property="og:title" content="Ivalisia - A Survival RPG Adventure">
-    <meta property="og:description" content="Survive, Build, Craft, and explore roguelike procedural dungeons in Ivalisia. Play solo or co-op with friends and enjoy permanent character progression.">
+    <meta property="og:title" content="Ivalisia - The Ultimate Survival RPG Adventure">
+    <meta property="og:description" content="Embark on an epic journey in Ivalisia, the immersive survival RPG by Lorendil Interactive.">
     <meta property="og:url" content="https://ivalisia.com">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://ivalisia.com/assets/og-image.jpg">
-
+    
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Ivalisia - A Survival RPG Adventure">
-    <meta name="twitter:description" content="Explore the fantasy world of Ivalisia, build, craft, and delve into roguelike dungeons with friends!">
+    <meta name="twitter:title" content="Ivalisia - The Ultimate Survival RPG Adventure">
+    <meta name="twitter:description" content="Explore the vast world of Ivalisia, build, craft, and delve into procedurally generated dungeons with friends!">
     <meta name="twitter:image" content="https://ivalisia.com/assets/og-image.jpg">
-
+    
     <!-- Include Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <!-- Include Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-eNfpK6LnTd8v3xxH6nZarJ9w38XAd5NXF1jWVk6izHCyQw3AcBlM+13nIxIlq1xG" crossorigin="anonymous">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    
+    <!-- Schema Markup for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "VideoGame",
+      "name": "Ivalisia",
+      "alternateName": ["Ivalissia", "Ivalysia", "Ivalisya", "Ivalyssia"],
+      "url": "https://ivalisia.com",
+      "image": "https://ivalisia.com/assets/og-image.jpg",
+      "description": "Ivalisia is an immersive top-down 2D survival RPG set in a vast, beautifully crafted fantasy world. Players embark on a journey of exploration, survival, and mastery, with an emphasis on adventure, character growth, and cooperative play.",
+      "author": {
+        "@type": "Organization",
+        "name": "Lorendil Interactive Inc."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Lorendil Interactive Inc."
+      },
+      "genre": ["Survival", "RPG", "Adventure", "Fantasy"],
+      "operatingSystem": "Windows",
+      "applicationCategory": "Game",
+      "datePublished": "To be announced",
+      "offers": {
+        "@type": "Offer",
+        "price": "TBD",
+        "priceCurrency": "USD"
+      }
+    }
+    </script>
+    
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+    <!-- Navigation Bar -->
     <header>
         <div class="container">
-            <h1 class="logo">Ivalisia</h1>
+            <a href="#" class="logo" aria-label="Ivalisia Home">Ivalisia</a>
             <nav>
                 <ul>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#story">Story</a></li>
+                    <li><a href="#media">Media</a></li>
                     <li><a href="mailto:admin@lorendil.com">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <main>
-        <section class="hero">
-            <div class="overlay">
-                <div class="content">
-                    <h2>Coming Soon</h2>
-                    <a href="#" class="btn">Visit Steam Page</a>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="overlay">
+            <div class="hero-content">
+                <h1>Ivalisia: Your Epic Survival Adventure Awaits</h1>
+                <p>Embark on a journey of exploration, survival, and mastery in a beautifully crafted fantasy world.</p>
+                <a href="https://store.steampowered.com/app/123456/Ivalisia" class="btn">Visit Steam Page</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2>Game Features</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <i class="fas fa-dungeon"></i>
+                    <h3>Procedurally Generated Dungeons</h3>
+                    <p>Explore endless dungeons filled with treasures, ruthless enemies, and ever-changing challenges.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-users"></i>
+                    <h3>Co-op Multiplayer</h3>
+                    <p>Team up with friends online and conquer the vast world of Ivalisia together.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-hammer"></i>
+                    <h3>Crafting & Building</h3>
+                    <p>Gather resources, craft unique items, and build your own settlements in diverse biomes.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-dragon"></i>
+                    <h3>Epic Monsters & Bosses</h3>
+                    <p>Face off against powerful foes and mythical creatures that test your skills and strategy.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-ship"></i>
+                    <h3>Skyship Adventures</h3>
+                    <p>Experience flight aboard skyships that traverse the vast skies of Ivalisia.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-level-up-alt"></i>
+                    <h3>Character Progression</h3>
+                    <p>Level up your skills such as fishing, woodcutting, mining, and more to customize your character's path.</p>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
+    <!-- Story Section -->
+    <section class="story" id="story">
+        <div class="container">
+            <h2>The World of Ivalisia</h2>
+            <p>Ivalisia is a realm divided by two main continents in the east and west, separated by a vast ocean dotted with mysterious islands. You awaken on one such island, surrounded by the echoes of ancient civilizations and the whispers of untold secrets. The skies above are alive with skyships—some are merchants trading exotic goods, while others are pirates locked in aerial battles. Your journey begins here, where you must survive, explore, and uncover the mysteries that lie between the continents.</p>
+        </div>
+    </section>
+
+    <!-- Media Section -->
+    <section class="media" id="media">
+        <div class="container">
+            <h2>Media Gallery</h2>
+            <div class="media-grid">
+                <img src="assets/screenshot1.jpg" alt="Exploring a lush forest in Ivalisia">
+                <img src="assets/screenshot2.jpg" alt="Battling epic monsters in Ivalisia">
+                <img src="assets/screenshot3.jpg" alt="Crafting and building your settlement">
+                <img src="assets/screenshot4.jpg" alt="A skyship soaring above the clouds">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Lorendil Interactive Inc.</p>
+        <div class="container">
+            <p>&copy; 2024 Lorendil Interactive Inc.</p>
+            <div class="social-links">
+                <a href="https://twitter.com/ivalisiaRPG" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://discord.gg/z23nBy9KBu" aria-label="Discord"><i class="fab fa-discord"></i></a>
+                <a href="https://store.steampowered.com/app/3324340/Ivalisia" aria-label="Steam"><i class="fab fa-steam"></i></a>
+            </div>
+        </div>
     </footer>
 </body>
 
 </html>
+
