@@ -120,23 +120,34 @@ nav a:hover {
     background-color: #0f1a17;
 }
 
+.horizontal-layout {
+    display: flex;
+    gap: 60px; /* Space between the title and the features */
+    align-items: center; /* Vertically center the title and grid */
+    padding: 0 40px; /* Add padding to both left and right */
+}
+
 .features h2 {
-    text-align: center;
+    flex: 1; /* Occupies the left side */
+    text-align: left;
     font-size: 36px;
-    margin-bottom: 60px;
-    color: #5dc4d2; /* Changed to your preferred color */
+    color: #5dc4d2;
 }
 
 .features-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 40px;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 30px;
+    flex: 3; /* Occupies more space on the right */
+    padding-right: 20px; /* Space on the right side of the features */
 }
 
 .feature-item {
     text-align: center;
-    padding: 20px;
+    padding: 10px;
 }
+
+
 
 .feature-item i {
     font-size: 48px;
@@ -208,30 +219,42 @@ nav a:hover {
 
 /* Footer */
 footer {
-    background: #0a0f0d;
-    padding: 40px 0;
+    background-color: #0a0f0d;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Space between copyright and social links */
+    min-height: 150px;
+    position: relative;
+    border-top: 1px solid #5dc4d2; /* Adds a top border for separation */
 }
 
 footer p {
+    color: #aaa;
+    font-size: 16px;
     text-align: center;
-    color: #777;
-    margin-bottom: 20px;
 }
 
 .social-links {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between the icons */
 }
 
 .social-links a {
-    color: #777;
-    margin: 0 10px;
+    color: #ccc;
     font-size: 24px;
     transition: color 0.3s;
 }
 
 .social-links a:hover {
-    color: #5dc4d2; /* Changed to your preferred color */
+    color: #5dc4d2;
 }
+
+
+
 
 /* Responsive Styles */
 @media (max-width: 768px) {
