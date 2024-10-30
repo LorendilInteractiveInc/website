@@ -30,10 +30,9 @@ header {
     z-index: 1000;
 }
 
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
+.header-container {
+    width: 100%;
+    padding: 0 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -41,7 +40,7 @@ header {
 
 .logo {
     font-size: 28px;
-    color: #34ebba; /* Tropical cyan turquoise */
+    color: #fff; /* Changed to white */
 }
 
 nav ul {
@@ -61,7 +60,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #34ebba;
+    color: #5dc4d2; /* Changed to your preferred color */
 }
 
 /* Hero Section */
@@ -71,15 +70,15 @@ nav a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
+    position: relative; /* Added position relative */
 }
 
 .overlay {
     position: absolute;
     top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
+    width: 100%; /* Ensures the overlay covers full width */
+    height: 100%; /* Ensures the overlay covers full height */
     background: rgba(10, 15, 13, 0.6);
 }
 
@@ -89,6 +88,7 @@ nav a:hover {
     color: #fff;
     max-width: 800px;
     padding: 0 20px;
+    z-index: 2; /* Ensures content appears above the overlay */
 }
 
 .hero-content h1 {
@@ -103,7 +103,7 @@ nav a:hover {
 
 .btn {
     padding: 15px 40px;
-    background: #34ebba;
+    background: #5dc4d2; /* Changed to your preferred color */
     color: #0a0f0d;
     font-weight: 700;
     border-radius: 50px;
@@ -111,7 +111,7 @@ nav a:hover {
 }
 
 .btn:hover {
-    background: #28a786; /* Slightly darker shade */
+    background: #4da5ae; /* Slightly darker shade of your color */
 }
 
 /* Features Section */
@@ -124,7 +124,7 @@ nav a:hover {
     text-align: center;
     font-size: 36px;
     margin-bottom: 60px;
-    color: #34ebba;
+    color: #5dc4d2; /* Changed to your preferred color */
 }
 
 .features-grid {
@@ -140,7 +140,7 @@ nav a:hover {
 
 .feature-item i {
     font-size: 48px;
-    color: #34ebba;
+    color: #5dc4d2; /* Changed to your preferred color */
     margin-bottom: 20px;
 }
 
@@ -164,7 +164,7 @@ nav a:hover {
     text-align: center;
     font-size: 36px;
     margin-bottom: 40px;
-    color: #34ebba;
+    color: #5dc4d2; /* Changed to your preferred color */
 }
 
 .story p {
@@ -187,7 +187,7 @@ nav a:hover {
     text-align: center;
     font-size: 36px;
     margin-bottom: 60px;
-    color: #34ebba;
+    color: #5dc4d2; /* Changed to your preferred color */
 }
 
 .media-grid {
@@ -230,12 +230,12 @@ footer p {
 }
 
 .social-links a:hover {
-    color: #34ebba;
+    color: #5dc4d2; /* Changed to your preferred color */
 }
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-    .container {
+    .header-container {
         flex-direction: column;
     }
 
